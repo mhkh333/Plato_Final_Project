@@ -23,5 +23,6 @@ public class SignInActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        System.out.println("Hi Ostad");
     }
 }
