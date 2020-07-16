@@ -1,14 +1,13 @@
-package com.example.project.ui.home;
+package com.example.project.ui.GamesFragment;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
-
+public class GamesViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public GamesViewModel() {
         mText = new MutableLiveData<>();
 
     }
