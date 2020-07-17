@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".SignInActivity" />
+        <activity android:name=".ui.notifications.AboutUs"/>
+
     </application>
 
 </manifest>

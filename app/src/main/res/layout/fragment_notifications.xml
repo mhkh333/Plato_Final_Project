@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Log_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log out"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.412" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/About_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="About US"
