@@ -3,7 +3,10 @@ package com.example.project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.project.ui.GamesFragment.GamesFragment;
@@ -26,11 +29,7 @@ public class MainPageAsliActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page_asli);
-
-
-
         bottomNavigationView = this.findViewById(R.id.nav_view);
-
 
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -64,6 +63,19 @@ public class MainPageAsliActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
+        final ImageButton profile = this.findViewById(R.id.Profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Profile.class);
+//             startActivity(intent);
+            }
+        });
+
+
+
 //
 //        about.setOnClickListener(new View.OnClickListener() {
 //            @Override
