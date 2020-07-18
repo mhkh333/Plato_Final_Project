@@ -7,15 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.project.R;
 
-public class AboutUs extends AppCompatActivity {
+public class LogOut extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.about_us_activity);
-
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
+        setContentView(R.layout.activity_main);
     }
-
 }
