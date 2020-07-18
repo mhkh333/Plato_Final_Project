@@ -17,7 +17,7 @@ import com.example.project.MainActivity;
 import com.example.project.Profile;
 import com.example.project.R;
 
-public class NotificationsFragment extends Fragment implements View.OnClickListener {
+public class NotificationsFragment extends Fragment  {
 
     private NotificationsViewModel notificationsViewModel;
 
@@ -31,6 +31,8 @@ public class NotificationsFragment extends Fragment implements View.OnClickListe
     Button button;
     Button logOut;
 
+    ImageButton profile;
+
 
 
     @Nullable
@@ -38,7 +40,14 @@ public class NotificationsFragment extends Fragment implements View.OnClickListe
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
 
-
+        profile = (ImageButton) root.findViewById(R.id.profile);
+//        profile.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Intent in = new Intent(getActivity(),Profile.class);
+////                startActivity(in);
+//            }
+//        });
 
         button = (Button) root.findViewById(R.id.About_us);
         button.setOnClickListener(new View.OnClickListener() {
@@ -63,13 +72,4 @@ public class NotificationsFragment extends Fragment implements View.OnClickListe
     }
 
 
-    @Override
-    public void onClick(View v) {
-        if (button.performClick()) {
-            Intent intent = new Intent(getContext(), AboutUs.class);
-            startActivity(intent);
-        }
-
-
     }
-}

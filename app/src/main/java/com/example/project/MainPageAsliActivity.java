@@ -29,8 +29,8 @@ public class MainPageAsliActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page_asli);
-        bottomNavigationView = this.findViewById(R.id.nav_view);
 
+        bottomNavigationView = this.findViewById(R.id.nav_view);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -63,19 +63,6 @@ public class MainPageAsliActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-
-        final ImageButton profile = this.findViewById(R.id.Profile);
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Profile.class);
-//             startActivity(intent);
-            }
-        });
-
-
-
 //
 //        about.setOnClickListener(new View.OnClickListener() {
 //            @Override
