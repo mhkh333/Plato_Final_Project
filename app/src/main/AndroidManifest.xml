@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".XO"></activity>
         <activity
             android:name=".MainPageAsliActivity"
             android:label="@string/title_activity_main_page_asli" />
