@@ -28,18 +28,11 @@ public class MainPageAsliActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_page_asli);
 
 
-        final Intent intent = new Intent(this, AboutUs.class);
+
         bottomNavigationView = this.findViewById(R.id.nav_view);
-        Button about = findViewById(R.id.About_us);
-        Button logOut = findViewById(R.id.Log_out);
 
 
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                                startActivity(intent);
-//            }
-//        });
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
