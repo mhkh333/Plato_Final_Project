@@ -18,18 +18,16 @@ import com.example.project.ui.dashboard.DashboardViewModel;
 public class GamesFragment extends Fragment {
     private GamesViewModel gamesViewModel;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        gamesViewModel = ViewModelProviders.of(this).get(GamesViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_games, container, false);
-        final TextView textView = root.findViewById(R.id.textView4);
-        gamesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        View root = inflater.inflate(R.layout.fragment_games,container,false);
         return root;
+
     }
 }

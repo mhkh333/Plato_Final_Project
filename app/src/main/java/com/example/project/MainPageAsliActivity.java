@@ -6,6 +6,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.project.ui.GamesFragment.GamesFragment;
+import com.example.project.ui.dashboard.DashboardFragment;
 import com.example.project.ui.home.HomeFragment;
 import com.example.project.ui.notifications.AboutUs;
 import com.example.project.ui.notifications.NotificationsFragment;
@@ -44,11 +46,14 @@ public class MainPageAsliActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.games:
                         Toast.makeText(getApplicationContext(), "Games", Toast.LENGTH_LONG).show();
-
+                        GamesFragment fragment2 = new GamesFragment();
+                        openFragment(fragment2);
                         break;
 
                     case R.id.navigation_dashboard:
-
+                        DashboardFragment fragment3 = new DashboardFragment();
+                        openFragment(fragment3);
+                        Toast.makeText(getApplicationContext(), "List Of Chats", Toast.LENGTH_SHORT).show();
                         break;
 
                     case R.id.navigation_home:
@@ -84,7 +89,7 @@ public class MainPageAsliActivity extends AppCompatActivity {
 //        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
 //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 //        NavigationUI.setupWithNavController(navView, navController);
-}
+    }
 
 
     private void openFragment(Fragment fragment) {
