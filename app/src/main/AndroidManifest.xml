@@ -11,10 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".XO"></activity>
+        <activity
+            android:name=".GamesPageMain"
+            android:label="@string/title_activity_games_page_main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity
             android:name=".MainPageAsliActivity"
             android:label="@string/title_activity_main_page_asli" />
+        <!--           -->
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,8 +32,10 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".ui.notifications.AboutUs" />
-        <activity android:name=".Profile"/>
-        <activity android:name=".PlusFriends"/>
+        <activity android:name=".Profile" />
+        <activity android:name=".PlusFriends" />
+        <activity android:name=".XO" />
+
     </application>
 
 </manifest>
