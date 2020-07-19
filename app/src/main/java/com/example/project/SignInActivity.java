@@ -32,7 +32,6 @@ public class SignInActivity extends AppCompatActivity {
 
 
         final Intent intent = new Intent(this, MainPageAsliActivity.class);
-
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
