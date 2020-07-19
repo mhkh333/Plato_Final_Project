@@ -1,10 +1,13 @@
 <resources>
-    <string name="app_name">Project</string>
-    <string name="title_activity_main_page_asli">MainActivity</string>
+    <string name="app_name">The Game main Page</string>
+    <string name="title_activity_main_page_asli">RKH-Plato</string>
     <string name="title_home">Friends</string>
     <string name="title_dashboard">List Of Chats</string>
     <string name="title_notifications">Setting</string>
     <string name="games">Games</string>
     <string name="guess_the_word">guess the word</string>
     <string name="guess">Guess</string>
+    <string name="title_activity_games_page_main">GamesPageMain</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

@@ -63,13 +63,6 @@ public class MainPageAsliActivity extends AppCompatActivity {
                 return true;
             }
         });
-//
-//        about.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(getApplicationContext(),"HI",Toast.LENGTH_SHORT).show();
-//            }
-//        });
 
 
 //     BottomNavigationView navView = findViewById(R.id.nav_view);

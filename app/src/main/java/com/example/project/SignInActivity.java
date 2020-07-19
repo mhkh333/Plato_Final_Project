@@ -59,7 +59,9 @@ public class SignInActivity extends AppCompatActivity {
     //if contains in arrayList must be here
     private boolean valid(String name, String password) {
         String use = "Khorram";
+        String use2 = "Rahbar";
+        String pass2 = "0912";
         String pass = "0921";
-        return name.equals(use) && password.equals(pass);
+        return (name.equals(use) && password.equals(pass)) || (name.equals(use2) && password.equals(pass2));
     }
 }
