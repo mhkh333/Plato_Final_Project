@@ -25,6 +25,8 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".ui.notifications.AboutUs" />
+        <activity android:name=".Profile"/>
+        <activity android:name=".PlusFriends"/>
     </application>
 
 </manifest>
