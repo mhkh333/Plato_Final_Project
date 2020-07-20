@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class XO extends AppCompatActivity implements View.OnClickListener {
@@ -17,6 +18,7 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xo_activity);
+
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
@@ -45,14 +47,19 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
             case R.id.btn1:
                 if (btn1.getText().toString().equals("")) {
                     if (marhale == 0) {
+
                         marhale = 1;
-                        btn1.setBackground(getDrawable( R.drawable.x));
-                        btn1.setClickable(false);
+                        btn1.setText("x");
+                        result();
+                        btn1.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+
+                        btn1.setText("o");
+                        result();
                         btn1.setBackground(getDrawable(R.drawable.o_300));
-                        btn1.setClickable(false);
                     }
+
                 }
                 break;
 
@@ -60,41 +67,54 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
                 if (btn2.getText().toString().equals("")) {
                     if (marhale == 0) {
                         marhale = 1;
-                        btn2.setBackground(getDrawable( R.drawable.x));
-                        btn2.setClickable(false);
+
+                        btn2.setText("x");
+                        result();
+                        btn2.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+
+                        btn2.setText("o");
+                        result();
                         btn2.setBackground(getDrawable(R.drawable.o_300));
-                        btn2.setClickable(false);
                     }
+
                 }
                 break;
 
             case R.id.btn3:
                 if (btn3.getText().toString().equals("")) {
                     if (marhale == 0) {
+
                         marhale = 1;
-                        btn3.setBackground(getDrawable( R.drawable.x));
-                        btn3.setClickable(false);
+                        btn3.setText("x");
+                        result();
+                        btn3.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+                        btn3.setText("o");
+                        result();
                         btn3.setBackground(getDrawable(R.drawable.o_300));
-                        btn3.setClickable(false);
                     }
+
                 }
                 break;
 
             case R.id.btn4:
                 if (btn4.getText().toString().equals("")) {
                     if (marhale == 0) {
+
                         marhale = 1;
-                        btn4.setBackground(getDrawable( R.drawable.x));
-                        btn4.setClickable(false);
+                        btn4.setText("x");
+                        result();
+                        btn4.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+                        btn4.setText("o");
+                        result();
                         btn4.setBackground(getDrawable(R.drawable.o_300));
-                        btn4.setClickable(false);
                     }
+
                 }
                 break;
 
@@ -102,13 +122,19 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
                 if (btn5.getText().toString().equals("")) {
                     if (marhale == 0) {
                         marhale = 1;
-                        btn5.setBackground(getDrawable( R.drawable.x));
-                        btn5.setClickable(false);
+                        btn5.setText("x");
+                        result();
+
+
+                        btn5.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+                        btn5.setText("o");
+                        result();
+
                         btn5.setBackground(getDrawable(R.drawable.o_300));
-                        btn5.setClickable(false);
                     }
+
                 }
                 break;
 
@@ -116,13 +142,17 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
                 if (btn6.getText().toString().equals("")) {
                     if (marhale == 0) {
                         marhale = 1;
-                        btn6.setBackground(getDrawable( R.drawable.x));
-                        btn6.setClickable(false);
+                        btn6.setText("x");
+                        result();
+
+                        btn6.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+                        btn6.setText("o");
+                        result();
                         btn6.setBackground(getDrawable(R.drawable.o_300));
-                        btn6.setClickable(false);
                     }
+
                 }
                 break;
 
@@ -130,13 +160,18 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
                 if (btn7.getText().toString().equals("")) {
                     if (marhale == 0) {
                         marhale = 1;
-                        btn7.setBackground(getDrawable( R.drawable.x));
-                        btn7.setClickable(false);
+                        btn7.setText("x");
+                        result();
+
+                        btn7.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+                        btn7.setText("o");
+                        result();
+
                         btn7.setBackground(getDrawable(R.drawable.o_300));
-                        btn7.setClickable(false);
                     }
+
                 }
                 break;
 
@@ -144,13 +179,17 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
                 if (btn8.getText().toString().equals("")) {
                     if (marhale == 0) {
                         marhale = 1;
-                        btn8.setBackground(getDrawable( R.drawable.x));
-                        btn8.setClickable(false);
+
+                        btn8.setText("x");
+                        result();
+                        btn8.setBackground(getDrawable(R.drawable.x));
                     } else {
                         marhale = 0;
+                        btn8.setText("o");
+                        result();
                         btn8.setBackground(getDrawable(R.drawable.o_300));
-                        btn8.setClickable(false);
                     }
+
                 }
                 break;
 
@@ -158,13 +197,17 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
                 if (btn9.getText().toString().equals("")) {
                     if (marhale == 0) {
                         marhale = 1;
-                        btn9.setBackground(getDrawable( R.drawable.x));
-                        btn9.setClickable(false);
+                        btn9.setText("x");
+                        result();
+                        btn9.setBackground(getDrawable(R.drawable.x));
+
                     } else {
                         marhale = 0;
+                        btn9.setText("o");
+                        result();
                         btn9.setBackground(getDrawable(R.drawable.o_300));
-                        btn9.setClickable(false);
                     }
+
                 }
                 break;
 
@@ -172,5 +215,66 @@ public class XO extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
+    public void result() {
+        if (btn1.getText().toString().equals("x") && btn2.getText().toString().equals("x") && btn3.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn4, btn5, btn6, btn7, btn8, btn9);////
+        } else if (btn4.getText().toString().equals("x") && btn5.getText().toString().equals("x") && btn6.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn2, btn3, btn7, btn8, btn9);////
+        } else if (btn9.getText().toString().equals("x") && btn7.getText().toString().equals("x") && btn8.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn4, btn5, btn6, btn1, btn2, btn3);////
+        } else if (btn1.getText().toString().equals("x") && btn4.getText().toString().equals("x") && btn7.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn2, btn5, btn8, btn3, btn6, btn9);////
+        } else if (btn2.getText().toString().equals("x") && btn5.getText().toString().equals("x") && btn8.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn4, btn7, btn3, btn6, btn9);////
+        } else if (btn3.getText().toString().equals("x") && btn6.getText().toString().equals("x") && btn9.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn4, btn7, btn2, btn5, btn8);////
+        } else if (btn1.getText().toString().equals("x") && btn5.getText().toString().equals("x") && btn9.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn2, btn3, btn4, btn6, btn7, btn8);////
+        } else if (btn3.getText().toString().equals("x") && btn5.getText().toString().equals("x") && btn7.getText().toString().equals("x")) {
+            Toast.makeText(this, "X WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn2, btn4, btn6, btn8, btn9);////
+        } else if (btn1.getText().toString().equals("o") && btn2.getText().toString().equals("o") && btn3.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn4, btn5, btn6, btn7, btn8, btn9);//
+        } else if (btn4.getText().toString().equals("o") && btn5.getText().toString().equals("o") && btn6.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn2, btn3, btn7, btn8, btn9);//
+        } else if (btn9.getText().toString().equals("o") && btn7.getText().toString().equals("o") && btn8.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn4, btn5, btn6, btn1, btn2, btn3);//
+        } else if (btn1.getText().toString().equals("o") && btn4.getText().toString().equals("o") && btn7.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn2, btn5, btn8, btn3, btn6, btn9);//
+        } else if (btn2.getText().toString().equals("o") && btn5.getText().toString().equals("o") && btn8.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn4, btn7, btn3, btn6, btn9);//
+        } else if (btn3.getText().toString().equals("o") && btn6.getText().toString().equals("o") && btn9.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn4, btn7, btn2, btn5, btn8);//
+        } else if (btn1.getText().toString().equals("o") && btn5.getText().toString().equals("o") && btn9.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn2, btn3, btn4, btn6, btn7, btn8);//
+        } else if (btn3.getText().toString().equals("o") && btn5.getText().toString().equals("o") && btn7.getText().toString().equals("o")) {
+            Toast.makeText(this, "O WON", Toast.LENGTH_LONG).show();
+            setOff(btn1, btn2, btn4, btn6, btn8, btn9);//
+        } else if (!btn1.getText().toString().equals("") && !btn2.getText().toString().equals("") && !btn3.getText().toString().equals("") && !btn4.getText().toString().equals("") && !btn5.getText().toString().equals("") && !btn6.getText().toString().equals("") && !btn7.getText().toString().equals("") && !btn8.getText().toString().equals("") && !btn9.getText().toString().equals("")) {
+            Toast.makeText(this, "DRAW", Toast.LENGTH_LONG).show();
+        }
+    }
 
+    public void setOff(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6) {
+        b1.setClickable(false);
+        b2.setClickable(false);
+        b3.setClickable(false);
+        b4.setClickable(false);
+        b5.setClickable(false);
+        b6.setClickable(false);
+    }
 }
