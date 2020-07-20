@@ -10,4 +10,8 @@
     <string name="title_activity_games_page_main">GamesPageMain</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="password">PassWord</string>
+    <string name="sign_in">Sign in</string>
+    <string name="username">UserName</string>
+    <string name="welcome_to_the_signin_please_sign_in">Welcome to the signIn please sign in</string>
 </resources>
