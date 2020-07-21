@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-        profileHome = root.findViewById(R.id.profile_home);
+        profileHome = root.findViewById(R.id.profile_game3);
         profileHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -52,6 +52,7 @@
             android:name=".XO"
             android:label="XO" />
 
+
     </application>
 
 </manifest>

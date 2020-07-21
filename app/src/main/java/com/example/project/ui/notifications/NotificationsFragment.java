@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 import androidx.annotation.NonNull;
@@ -14,11 +15,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.project.MainActivity;
 
+import com.example.project.Profile;
 import com.example.project.R;
 
 public class NotificationsFragment extends Fragment {
-
-
 
 
     @Override
@@ -29,7 +29,7 @@ public class NotificationsFragment extends Fragment {
 
     Button button;
     Button logOut;
-
+    ImageButton pro;
 
 
     @Nullable
@@ -37,6 +37,14 @@ public class NotificationsFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
 
+        pro = root.findViewById(R.id.profile_game4);
+        pro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Profile.class);
+                startActivity(in);
+            }
+        });
 
 
         button = root.findViewById(R.id.About_us);
@@ -48,7 +56,7 @@ public class NotificationsFragment extends Fragment {
             }
         });
 
-        logOut =  root.findViewById(R.id.Log_out);
+        logOut = root.findViewById(R.id.Log_out);
         logOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,6 +68,4 @@ public class NotificationsFragment extends Fragment {
         return root;
 
     }
-
-
 }

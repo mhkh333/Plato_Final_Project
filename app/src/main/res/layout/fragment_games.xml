@@ -4,7 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+
+    >
+
 
     <Button
         android:id="@+id/XO"
@@ -76,5 +79,13 @@
         app:layout_constraintTop_toTopOf="@+id/XO"
         app:layout_constraintVertical_bias="0.532"
         app:srcCompat="@drawable/guess" />
+
+    <ImageButton
+        android:id="@+id/profile_game"
+        android:layout_width="129dp"
+        android:layout_height="185dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
