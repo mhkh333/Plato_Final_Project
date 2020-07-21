@@ -38,9 +38,11 @@ public class SignInActivity extends AppCompatActivity {
                 String inputName = name.getText().toString();
                 String inputPassword = password.getText().toString();
 
-                if (inputName.isEmpty() || inputPassword.isEmpty()) {
-                    Toast.makeText(SignInActivity.this, "please enter more than zero", Toast.LENGTH_LONG).show();
-                } else {
+                if (inputName.isEmpty()) {
+                    Toast.makeText(SignInActivity.this, "please enter an username", Toast.LENGTH_SHORT).show();
+                }else if (inputPassword.isEmpty()) {
+                    Toast.makeText(SignInActivity.this, "please enter a password", Toast.LENGTH_SHORT).show();
+                }else {
                     isOkBoth = valid(inputName, inputPassword);
 
                     if (!isOkBoth) {
