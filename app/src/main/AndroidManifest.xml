@@ -7,7 +7,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="RKH_PLATO"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -15,6 +15,7 @@
             android:name=".GamesPageMain"
             android:label="@string/title_activity_games_page_main"
             android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
         <activity
             android:name=".MainPageAsliActivity"
@@ -22,19 +23,34 @@
         <!--           -->
 
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="WELCOME">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".ui.notifications.AboutUs" />
-        <activity android:name=".Profile" />
-        <activity android:name=".PlusFriends" />
-        <activity android:name=".XO" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="SIGN UP" />
+        <activity
+            android:name=".SignInActivity"
+            android:label="SIGN IN" />
+        <activity
+            android:name=".ui.notifications.AboutUs"
+            android:label="ABOUT US" />
+        <activity
+            android:name=".Profile"
+            android:label="PROFILE" />
+        <activity
+            android:name=".PlusFriends"
+            android:label="ADD FRIEND" />
+        <activity
+            android:name=".XO"
+            android:label="XO" />
 
     </application>
 
