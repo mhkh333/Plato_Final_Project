@@ -14,4 +14,11 @@
     <string name="sign_in">Sign in</string>
     <string name="username">UserName</string>
     <string name="welcome_to_the_signin_please_sign_in">Welcome to the signIn please sign in</string>
+    <string name="make_room">make room</string>
+    <string name="play_now">Play Now</string>
+    <string name="add">ADD</string>
+    <string name="create">Create</string>
+    <string name="choose_your_room_s_name">Choose your room`s name</string>
+    <string name="join_a_room">Join a room</string>
+    <string name="join">Join</string>
 </resources>
