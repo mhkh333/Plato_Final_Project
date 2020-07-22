@@ -14,21 +14,40 @@ import androidx.fragment.app.Fragment;
 
 import com.example.project.R;
 
-public class Tab1Fragment  extends Fragment {
-    private static final String tag = "Tab1";
+public class Tab1Fragment extends Fragment {
 
-    private Button btn;
+
+    Button room;
+    Button join;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.tab_1_fragment,container,false);
-        btn = root.findViewById(R.id.button);
+        View root = inflater.inflate(R.layout.tab_1_fragment, container, false);
+        Button btn = root.findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),XO.class);
+                Intent intent = new Intent(getActivity(), XO.class);
                 startActivity(intent);
+            }
+        });
+
+        join = root.findViewById(R.id.join);
+        join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Join_room_Xo_Causaul.class);
+                startActivity(intent);
+            }
+        });
+
+        room = root.findViewById(R.id.room);
+        room.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), Casual_XO_Room.class);
+                startActivity(in);
             }
         });
 

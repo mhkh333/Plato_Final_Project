@@ -25,7 +25,7 @@ public class Tab2Fragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"Tab2", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),"find opponent", Toast.LENGTH_SHORT).show();
             }
         });
 

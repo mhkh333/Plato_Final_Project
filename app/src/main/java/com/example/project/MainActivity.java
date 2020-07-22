@@ -15,7 +15,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);////////////////////////////////checking
+
+// initial code        final Intent intent = new Intent(this, SignUpActivity.class);
         final Intent intent = new Intent(this, SignUpActivity.class);
 
         Button button = this.findViewById(R.id.signUp);

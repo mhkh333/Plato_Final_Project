@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
+    <ImageButton
+        android:id="@+id/profile_game2"
+        android:layout_width="129dp"
+        android:layout_height="185dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
     <TextView
         android:id="@+id/text_dashboard"
         android:layout_width="match_parent"

@@ -43,12 +43,12 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String message;
                 message = at.sendClientData("Button");
-                if(name.getText().toString().isEmpty()){
+                /*if(name.getText().toString().isEmpty()){
                     Toast.makeText(SignUpActivity.this, "Username cannot be empty", Toast.LENGTH_LONG).show();
                 }else if(password.getText().toString().isEmpty()){
                     Toast.makeText(SignUpActivity.this, "Plz enter a password", Toast.LENGTH_LONG).show();
                 }
-                else if (message.contains("Ok")){
+                else */if (message.contains("Ok")){
                     Toast.makeText(SignUpActivity.this, "Account created", Toast.LENGTH_LONG).show();
                     startActivity(intent);
                 }
