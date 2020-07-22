@@ -22,7 +22,6 @@ public class SignUpActivity extends AppCompatActivity {
     boolean isOkBoth = true;
 
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +34,6 @@ public class SignUpActivity extends AppCompatActivity {
         final Intent intent = new Intent(this, MainPageAsliActivity.class);
 
 
-
         signUp.setOnClickListener(new View.OnClickListener() {
 
 
@@ -43,11 +41,11 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String inputName = name.getText().toString();
                 String inputPassword = password.getText().toString();
-                password.setOnFocusChangeListener(new View.OnFocusChangeListener(){
+                password.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                     @Override
                     public void onFocusChange(View v, boolean hasFocus) {
-                        if(hasFocus){
-                            if(password.getText().toString().trim().length() < 5){
+                        if (hasFocus) {
+                            if (password.getText().toString().trim().length() < 5) {
                                 password.setError("Please enter more than 5 characters for password");
                             }
                         }
@@ -56,15 +54,13 @@ public class SignUpActivity extends AppCompatActivity {
 
                 if (inputName.isEmpty() || inputPassword.isEmpty()) {
                     Toast.makeText(SignUpActivity.this, "please enter more than zero", Toast.LENGTH_LONG).show();
-                }
-                else if(password.getText().toString().trim().length() < 5){
-                    Toast.makeText(SignUpActivity.this,"Please enter the password more than 5 elements",Toast.LENGTH_LONG).show();
-                }
-                else {
+                } else if (password.getText().toString().trim().length() < 5) {
+                    Toast.makeText(SignUpActivity.this, "Please enter the password more than 5 elements", Toast.LENGTH_LONG).show();
+                } else {
                     if (!isOkBoth) {
                         Toast.makeText(SignUpActivity.this, "please enter correct", Toast.LENGTH_LONG).show();
                     } else {
-                        Toast.makeText(SignUpActivity.this, "Login succeeded", Toast.LENGTH_LONG).show();
+                        Toast.makeText(SignUpActivity.this, "SignUp succeeded", Toast.LENGTH_LONG).show();
                         startActivity(intent);
                     }
                 }
