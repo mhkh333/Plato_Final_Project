@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Join_room_Xo_Causaul"
-            android:label="Join room">
-
-        </activity>
-        <activity android:name=".Casual_XO_Room"
-            android:label="Create room"/>
         <activity
-            android:name=".GamesPageMain"
+            android:name=".Join_room_Xo_Causaul"
+            android:label="Join room" />
+        <activity
+            android:name=".Casual_XO_Room"
+            android:label="Create room" />
+        <activity
+            android:name=".XOPageMain"
             android:label="@string/title_activity_games_page_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -61,6 +61,19 @@
         <activity
             android:name=".XO"
             android:label="XO" />
-</application>
 
+        <activity
+            android:name=".PointPageMain"
+            android:label="PointPageMain" />
+        <activity
+            android:name=".Casual_Point_Room"
+            android:label="Casual Point Room" />
+        <activity
+            android:name=".Join_room_Point_Causaul"
+            android:label="Point-Box Join Room " />
+        <activity
+            android:name=".PointBox"
+            android:label="Point Box" />
+
+    </application>
 </manifest>

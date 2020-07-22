@@ -37,7 +37,7 @@ public class Tab1Fragment extends Fragment {
         join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Join_room_Xo_Causaul.class);
+                Intent intent = new Intent(getActivity(), Join_room_Xo_Causaul.class);
                 startActivity(intent);
             }
         });
@@ -50,6 +50,8 @@ public class Tab1Fragment extends Fragment {
                 startActivity(in);
             }
         });
+
+
 
         return root;
     }
