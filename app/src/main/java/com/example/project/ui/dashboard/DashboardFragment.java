@@ -46,16 +46,16 @@ public class DashboardFragment extends Fragment {
         items.add("mohammad");
         items.add("shahin");
         items.add("mashit");
-        items.add("ali");
-        items.add("asghar");
-        items.add("mohammad");
-        items.add("shahin");
-        items.add("mashit");
-        items.add("ali");
-        items.add("asghar");
-        items.add("mohammad");
-        items.add("shahin");
-        items.add("mashit");
+//        items.add("ali");
+//        items.add("asghar");
+//        items.add("mohammad");
+//        items.add("shahin");
+//        items.add("mashit");
+//        items.add("ali");
+//        items.add("asghar");
+//        items.add("mohammad");
+//        items.add("shahin");
+//        items.add("mashit");
     }
 
     @Nullable
