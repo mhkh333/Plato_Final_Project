@@ -86,7 +86,6 @@ public class NetworkHandlerAsyncTask extends AsyncTask<View, String, String> {
                                 stringMessage[0] = "password is Ok";
                             }
                         }
-
                         isTheWorkDoneWithTask = true;
                     }
                 } catch (IOException | ClassNotFoundException e) {
