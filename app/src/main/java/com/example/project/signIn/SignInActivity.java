@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.project.signIn;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.project.MainPageAsliActivity;
+import com.example.project.R;
 
 import java.util.ArrayList;
 
