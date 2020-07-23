@@ -15,27 +15,28 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);////////////////////////////////checking
 
-        final Intent signUpIntent = new Intent(this, SignUpActivity.class);
+// initial code        final Intent intent = new Intent(this, SignUpActivity.class);
+        final Intent intent = new Intent(this, SignUpActivity.class);
 
         Button button = this.findViewById(R.id.signUp);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"To Sign Up",Toast.LENGTH_SHORT).show();
-                startActivity(signUpIntent);
+                Toast.makeText(getApplicationContext(),"To Sign Up",Toast.LENGTH_LONG).show();
+                startActivity(intent);
             }
         });
 
-        final Intent signInIntent = new Intent(this, SignInActivity.class);
 
+        final Intent intent1 = new Intent(this, SignInActivity.class);
         Button button1 = this.findViewById(R.id.signIn);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"To Sign In",Toast.LENGTH_SHORT).show();
-                startActivity(signInIntent);
+                Toast.makeText(getApplicationContext(),"To Sign In",Toast.LENGTH_LONG).show();
+                startActivity(intent1);
             }
         });
 

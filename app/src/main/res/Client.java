@@ -11,6 +11,8 @@ import java.util.ArrayList;
 public class Client {
     public static ObjectInputStream ois ;
     public static ObjectOutputStream oos;
+    /*public static DataInputStream ois ;
+    public static DataOutputStream oos;*/
     public static Socket socket ;
     public static ArrayList<Friend> friends;
     public static String username;
