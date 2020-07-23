@@ -34,21 +34,21 @@ public class SignUpActivity extends AppCompatActivity {
         name = this.findViewById(R.id.Name);
         password = this.findViewById(R.id.Password);
         final Intent intent = new Intent(this, MainPageAsliActivity.class);
-        at = new NetworkHandlerAsyncTask();
-        at.execute(name,password);
+//        at = new NetworkHandlerAsyncTask();
+//        at.execute(name,password);
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String message;
-                message = at.sendClientData("Button");
-                if (message.contains("Ok")){
+//                message = at.sendClientData("Button");
+//                if (message.contains("Ok")){
                     Toast.makeText(SignUpActivity.this, "Account created", Toast.LENGTH_LONG).show();
                     startActivity(intent);
-                }
-                else{
-                    Toast.makeText(SignUpActivity.this, message, Toast.LENGTH_LONG).show();
-                }
+//                }
+//                else{
+//                    Toast.makeText(SignUpActivity.this, message, Toast.LENGTH_LONG).show();
+//                }
             }
         });
 

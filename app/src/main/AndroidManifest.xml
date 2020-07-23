@@ -48,7 +48,7 @@
             android:label="SIGN UP" />
             -->
         <activity
-            android:name=".SignInActivity"
+            android:name=".signIn.SignInActivity"
             android:label="SIGN IN" />
         <activity
             android:name=".ui.notifications.AboutUs"

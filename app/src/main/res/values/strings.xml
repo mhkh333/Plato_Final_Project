@@ -12,7 +12,7 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="password">PassWord</string>
     <string name="sign_in">Sign in</string>
-    <string name="username">UserName</string>
+
     <string name="welcome_to_the_signin_please_sign_in">Welcome to the signIn please sign in</string>
     <string name="make_room">make room</string>
     <string name="play_now">Play Now</string>
@@ -23,4 +23,7 @@
     <string name="join">Join</string>
     <string name="xo_page">XO Page</string>
     <string name="point_page">Point Box page</string>
+    <string name="welcome_to_sign_up_please_sign_up_correctly">Welcome to sign up please sign up correctly</string>
+    <string name="username">UserName</string>
+    <string name="sign_up">Sign up</string>
 </resources>
