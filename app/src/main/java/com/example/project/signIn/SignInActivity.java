@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.project.MainPageAsliActivity;
 import com.example.project.R;
+import com.example.project.signUp.NetworkHandlerAsyncTask;
+import com.example.project.signUp.SignUpActivity;
 
 import java.util.ArrayList;
 
@@ -19,7 +21,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private EditText name;
     private EditText password;
-
+    private SignInNetworkHandlerAsyncTask at;
     boolean isOkBoth = false;
     public ArrayList<String> haj = new ArrayList<>();
 
@@ -29,45 +31,24 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(R.layout.signin_activity);
 
 
-        name = findViewById(R.id.PersonName);
-        password = findViewById(R.id.Password);
         Button signIn = findViewById(R.id.button2);
-
-
+        name = this.findViewById(R.id.PersonName);
+        password = this.findViewById(R.id.Password);
         final Intent intent = new Intent(this, MainPageAsliActivity.class);
+        at = new SignInNetworkHandlerAsyncTask();
+        at.execute(name,password);
+
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String inputName = name.getText().toString();
-                String inputPassword = password.getText().toString();
-                password.setOnFocusChangeListener(new View.OnFocusChangeListener(){
-                    @Override
-                    public void onFocusChange(View v, boolean hasFocus) {
-                        if(hasFocus){
-                            if(password.getText().toString().trim().length() < 5){
-                                password.setError("Please enter more than 5 characters for password");
-                            }
-                        }
-                    }
-                });
-
-                if (inputName.isEmpty() || inputPassword.isEmpty()) {
-                    Toast.makeText(SignInActivity.this, "please enter more than zero", Toast.LENGTH_LONG).show();
+                String message;
+                message = at.sendClientData("Button");
+                if (message.contains("Ok")){
+                    Toast.makeText(SignInActivity.this, "Account created", Toast.LENGTH_LONG).show();
+                    startActivity(intent);
                 }
-                else if(password.getText().toString().trim().length() < 5){
-                    Toast.makeText(SignInActivity.this,"Please enter the password more than 5 elements",Toast.LENGTH_LONG).show();
-                }
-                else {
-
-                    isOkBoth = valid(inputName, inputPassword);
-
-                    if (!isOkBoth) {
-
-                        Toast.makeText(SignInActivity.this, "please enter correct", Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(SignInActivity.this, "Login succeeded", Toast.LENGTH_LONG).show();
-                        startActivity(intent);
-                    }
+                else{
+                    Toast.makeText(SignInActivity.this, message, Toast.LENGTH_LONG).show();
                 }
             }
         });
