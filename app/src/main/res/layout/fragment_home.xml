@@ -8,14 +8,15 @@
 
     <ImageButton
         android:id="@+id/profile_game3"
-        android:layout_width="129dp"
-        android:layout_height="185dp"
+        android:layout_width="54dp"
+        android:layout_height="55dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/profile" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -33,14 +34,14 @@
 
     <ListView
         android:id="@+id/listView1"
-        android:layout_width="402dp"
-        android:layout_height="510dp"
+        android:layout_width="408dp"
+        android:layout_height="615dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98" >
+        app:layout_constraintVertical_bias="0.98">
 
 
     </ListView>

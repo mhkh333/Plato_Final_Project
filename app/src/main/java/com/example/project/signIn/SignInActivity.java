@@ -22,8 +22,6 @@ public class SignInActivity extends AppCompatActivity {
     private EditText name;
     private EditText password;
     private SignInNetworkHandlerAsyncTask at;
-    boolean isOkBoth = false;
-    public ArrayList<String> haj = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,7 +42,7 @@ public class SignInActivity extends AppCompatActivity {
                 String message;
                 message = at.sendClientData("Button");
                 if (message.contains("Ok")){
-                    Toast.makeText(SignInActivity.this, "Account created", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SignInActivity.this, "Login succeeded", Toast.LENGTH_LONG).show();
                     startActivity(intent);
                 }
                 else{
@@ -53,14 +51,5 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    //if contains in arrayList must be here
-    private boolean valid(String name, String password) {
-        String use = "Khorram";
-        String use2 = "Rahbar";
-        String pass2 = "09120";
-        String pass = "09210";
-        return (name.equals(use) && password.equals(pass)) || (name.equals(use2) && password.equals(pass2));
     }
 }
